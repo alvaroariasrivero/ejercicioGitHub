@@ -10,4 +10,3 @@ const validacionForm = () => {
 
 let botonEnviar = document.getElementById("boton"); 
     botonEnviar.addEventListener("click", validacionForm);
-
