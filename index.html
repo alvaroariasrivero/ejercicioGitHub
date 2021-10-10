@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">  
+    <title>Git Form</title>
 </head>
 <body>
-    <form>
-        <input type="text" id="nombre">
-        <label for="nombre">Nombre</label>
-        <input type="password" id="contrasena">
-        <label for="contrasena">Contraseña</label>
-        <button type="submit">Enviar respuesta</button>
-    </form>
+    <h1>Formulario de contacto - Ejercicio Git</h1>
+    <section>
+        <form id="formulario">
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" autofocus> <br><br>
+            <label for="contrasena">Contraseña</label><br>
+            <input type="password" id="contrasena">
+            <p id="valido"></p>
+            <input type="button" value="Enviar" id="boton" onclick="validacion()">
+            <!-- <button type="submit" id="boton" onclick="validacion()">Enviar</button> -->
+        </form>
+    </section>
+
+    <script src="./scripts/script.js" defer></script>
 </body>
 </html>
